@@ -1,0 +1,16 @@
+.toolbar__container {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  padding: 4px 0;
+  background-color: black;
+}
+
+.toolbar__container a {
+  width: 6%;
+  line-height: 0;
+}
+
+.toolbar__container img {
+  max-width: 100%;
+}
