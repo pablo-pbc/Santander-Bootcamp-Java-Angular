@@ -9,6 +9,8 @@ import { NavBarComponent } from './components/header/nav-bar/nav-bar.component';
 import { MenuBarComponent } from './components/header/menu-bar/menu-bar.component';
 import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { DropdownComponent } from './components/header/nav-bar/dropdown/dropdown.component';
+import { SearchBtnComponent } from './components/header/nav-bar/search-btn/search-btn.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +20,9 @@ import { FooterComponent } from './components/footer/footer.component';
     NavBarComponent,
     MenuBarComponent,
     HomeComponent,
-    FooterComponent
+    FooterComponent,
+    DropdownComponent,
+    SearchBtnComponent
   ],
   imports: [
     BrowserModule,

@@ -35,10 +35,10 @@
 }
 
 .menu-bar__container .menu-bar__item > ul > li > a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'SST', sans-serif;
   color: black;
-  font-size: 1rem;
-  font-weight: 600;
+  font-size: 0.875rem;
+  font-weight: 500;
   padding: 4px 12px;
   border-radius: 25px;
   transition: all 0.3s ease-in-out;
