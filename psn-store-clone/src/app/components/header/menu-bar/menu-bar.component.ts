@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./menu-bar.component.css']
 })
 export class MenuBarComponent {
-
+  items: string[] = [
+    'Novidades',
+    'Coleções',
+    'Ofertas',
+    'PS5',
+    'Assinaturas',
+    'Navegar'
+  ];
 }

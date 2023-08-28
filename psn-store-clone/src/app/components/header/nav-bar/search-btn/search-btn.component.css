@@ -2,5 +2,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 3rem;
+  margin: 2px 0 0 0;
+  padding: 5px 15px;
+  border: 2px solid #00000010;
   cursor: pointer;
+  color: #00000095;
+  font-family: 'SST', sans-serif;
+}
+
+.search-btn__container:hover {
+  border: 2px solid #00000090;
 }

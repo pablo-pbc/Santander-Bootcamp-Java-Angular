@@ -2,12 +2,13 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  padding: 4px 0;
+  padding: 0.3125rem;
   background-color: black;
 }
 
 .toolbar__container a {
-  width: 6%;
+  max-height: 2.25rem;
+  max-width: 4.6875rem;
   line-height: 0;
 }
 

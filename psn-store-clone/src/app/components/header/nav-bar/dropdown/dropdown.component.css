@@ -1,0 +1,17 @@
+.dropdown__container {
+  display: flex;
+  flex-direction: row;
+  gap: 0.5rem;
+}
+
+.dropdown__container li {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  font-family: 'SST', sans-serif;
+  color: #00000080;
+  font-weight: 600;
+  font-size: 0.625rem;
+  letter-spacing: 0.0625rem;
+}
+
