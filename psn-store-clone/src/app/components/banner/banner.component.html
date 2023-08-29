@@ -1,14 +1,21 @@
-<section>
-  <div>
-    <img src="" alt="">
+<section class="banner__container">
+  <div class="banner-img__container">
+    <img src="{{src}}" alt="{{descrition}}">
   </div>
 
-  <div>
-    <div>
-      <h1>Seu dinheiro rendendo mais</h1>
-      <p>Conheça nossas opções de investimento e comece a investir agora mesmo.</p>
-    </div>
+  <div class="banner-txt__container">
+    <div class="txt__container">
+      <div>
+        <h1>
+          {{title}}
+        </h1>
 
-    <app-button-home label="Economize Já"></app-button-home>
+        <p>
+          {{text}}
+        </p>
+      </div>
+
+      <app-button-home label="Economize Já"></app-button-home>
+    </div>
   </div>
 </section>

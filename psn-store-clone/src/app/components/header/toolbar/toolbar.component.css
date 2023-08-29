@@ -17,7 +17,6 @@
   max-width: 100%;
 }
 
-
 @media only screen and (max-width: 700px) {
   .toolbar__container {
     display: none;
