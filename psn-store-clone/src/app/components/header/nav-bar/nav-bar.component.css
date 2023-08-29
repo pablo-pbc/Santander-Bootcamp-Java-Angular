@@ -40,7 +40,7 @@
 
 .nav-bar__signIn > span {
   font-family: 'SST', sans-serif;
-  font-size: 1rem;
-  letter-spacing: 0.5px;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
   font-weight: 600;
 }

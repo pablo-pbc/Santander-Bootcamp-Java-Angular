@@ -11,6 +11,9 @@ import { HomeComponent } from './pages/home/home.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { DropdownComponent } from './components/header/nav-bar/dropdown/dropdown.component';
 import { SearchBtnComponent } from './components/header/nav-bar/search-btn/search-btn.component';
+import { ButtonHomeComponent } from './components/button-home/button-home.component';
+import { BannerComponent } from './components/banner/banner.component';
+import { CardGamesComponent } from './components/card-games/card-games.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { SearchBtnComponent } from './components/header/nav-bar/search-btn/searc
     HomeComponent,
     FooterComponent,
     DropdownComponent,
-    SearchBtnComponent
+    SearchBtnComponent,
+    ButtonHomeComponent,
+    BannerComponent,
+    CardGamesComponent
   ],
   imports: [
     BrowserModule,

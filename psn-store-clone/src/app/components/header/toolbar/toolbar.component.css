@@ -2,6 +2,7 @@
   display: flex;
   justify-content: end;
   align-items: center;
+  width: 100%;
   padding: 0.3125rem;
   background-color: black;
 }
@@ -14,4 +15,11 @@
 
 .toolbar__container img {
   max-width: 100%;
+}
+
+
+@media only screen and (max-width: 700px) {
+  .toolbar__container {
+    display: none;
+  }
 }
