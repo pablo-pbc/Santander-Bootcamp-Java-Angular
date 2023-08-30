@@ -1,0 +1,12 @@
+<section class="carousel-main__container">
+  <p-carousel [numVisible]="6" [numScroll]="3" [circular]="false" [responsiveOptions]="responsiveOptions">
+    <ng-template *ngFor="game of games; let i = index">
+      <div>
+        <a href="#">
+          <img src="{{games[i]}}" alt="nameGames[i]">
+          {{nameGames[i]}}
+        </a>
+      </div>
+    </ng-template>
+  </p-carousel>
+</section>
