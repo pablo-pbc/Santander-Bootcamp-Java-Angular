@@ -11,11 +11,11 @@ export class BannerComponent {
   @Input()
   descrition: string = '';
   @Input()
-  display: string = '';
+  descritionDisplay: string = '';
   @Input()
   title: string = '';
   @Input()
   text: string = '';
 
-  
+
 }

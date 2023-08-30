@@ -42,6 +42,14 @@
   color: #6b6b6b;
 }
 
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
+}
+
 @media only screen and (max-width: 700px) {
   .txt__container {
     flex-direction: column;
