@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./dropdown.component.css']
 })
 export class DropdownComponent {
-
+  items: string[] = [
+    'Jogos',
+    'Hardware',
+    'Serviços',
+    'Noticias',
+    'Loja',
+    'Suporte'
+  ];
 }

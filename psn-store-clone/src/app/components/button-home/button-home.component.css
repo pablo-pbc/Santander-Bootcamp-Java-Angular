@@ -1,0 +1,27 @@
+.btn__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn__container > a:hover {
+  background-color: #00439c;
+  cursor: pointer;
+}
+
+.btn__container > a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  width: 130px;
+  height: 34px;
+  font-size: 14px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  border-radius: 30px;
+  text-decoration: none;
+  background-color: #0072ce;
+  transition: 0.2s ease-in-out;
+}
