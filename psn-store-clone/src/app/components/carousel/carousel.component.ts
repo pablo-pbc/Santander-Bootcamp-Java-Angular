@@ -1,66 +1,89 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
+
+interface Card {
+  src?: string;
+  name?: string;
+}
 
 @Component({
   selector: 'app-carousel',
   templateUrl: './carousel.component.html',
   styleUrls: ['./carousel.component.css'],
 })
-export class CarouselComponent {
-  @Input() carouselTitle: string;
 
-  games: string[];
-  nameGames: string[];
+export class CarouselComponent implements OnInit{
+  @Input() carouselTitle: string;
   prefix: string;
 
+  games: Card[] = [];
   responsiveOptions: any[] | undefined;
 
   constructor() {
     this.carouselTitle = '';
-
     this.prefix = 'assets/carousel-1/';
+  }
 
-    this.nameGames = [
-      'Fortnite',
-      'EA SPORTS FC™ 24',
-      'EA SPORTS™ FIFA 23',
-      'ARMORED CORE™ VI FIRES OF RUBICON™',
-      'Call of Duty®',
-      'Grand Theft Auto V (PlayStation®5)',
-      'Baldur\'s Gate 3',
-      'Red Dead Redemption 2',
-      'Tom Clancy\'s Rainbow Six® Siege',
-      'Mortal Kombat 1',
-    ];
-
+  ngOnInit(): void {
     this.games = [
-      `${this.prefix}img-1.png`,
-      `${this.prefix}img-2.png`,
-      `${this.prefix}img-3.png`,
-      `${this.prefix}img-4.png`,
-      `${this.prefix}img-5.png`,
-      `${this.prefix}img-6.png`,
-      `${this.prefix}img-7.png`,
-      `${this.prefix}img-8.png`,
-      `${this.prefix}img-9.png`,
-      `${this.prefix}img-10.png`,
+      {
+        src: `${this.prefix}img-1.png`,
+        name: 'Fortnite',
+      },
+      {
+        src: `${this.prefix}img-2.png`,
+        name: 'EA SPORTS FC™ 24',
+      },
+      {
+        src: `${this.prefix}img-3.png`,
+        name: 'EA SPORTS™ FIFA 23',
+      },
+      {
+        src: `${this.prefix}img-4.png`,
+        name: 'ARMORED CORE™ VI FIRES OF RUBICON',
+      },
+      {
+        src: `${this.prefix}img-5.png`,
+        name: 'Call of Duty®',
+      },
+      {
+        src: `${this.prefix}img-6.png`,
+        name: 'Grand Theft Auto V (PlayStation®5)',
+      },
+      {
+        src: `${this.prefix}img-7.png`,
+        name: 'Baldur\'s Gate 3',
+      },
+      {
+        src: `${this.prefix}img-8.png`,
+        name: 'Red Dead Redemption 2',
+      },
+      {
+        src: `${this.prefix}img-9.png`,
+        name: 'Tom Clancy\'s Rainbow Six® Siege',
+      },
+      {
+        src: `${this.prefix}img-10.png`,
+        name: 'Mortal Kombat 1',
+      }
     ];
 
     this.responsiveOptions = [
       {
-        breakpoint: '1199px',
-        numVisible: 1,
-        numScroll: 1,
+        breakpoint: '1326px',
+        numVisible: 4,
+        numScroll: 4,
       },
       {
-        breakpoint: '991px',
-        numVisible: 2,
-        numScroll: 1,
+        breakpoint: '1030',
+        numVisible: 3,
+        numScroll: 3,
       },
       {
         breakpoint: '767px',
-        numVisible: 1,
-        numScroll: 1,
+        numVisible: 2,
+        numScroll: 2,
       },
     ];
   }
 }
+

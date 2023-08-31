@@ -1,11 +1,25 @@
 <section class="carousel-main__container">
-  <p-carousel [numVisible]="6" [numScroll]="3" [circular]="false" [responsiveOptions]="responsiveOptions">
-    <ng-template *ngFor="game of games; let i = index">
-      <div>
-        <a href="#">
-          <img src="{{games[i]}}" alt="nameGames[i]">
-          {{nameGames[i]}}
-        </a>
+  <header class="carousel-main__header">
+    {{carouselTitle}}
+  </header>
+  <p-carousel
+    [value]="games"
+    [numVisible]="6"
+    [numScroll]="6"
+    [circular]="false"
+    [showIndicators]="false"
+    [responsiveOptions]="responsiveOptions">
+    <ng-template let-games pTemplate="item">
+      <div class="product-item">
+        <div class="product-item-content">
+          <a href="#">
+            <img src="{{games.src}}" alt="{{games.name}}">
+          </a>
+        </div>
+
+        <span>
+          {{games.name}}
+        </span>
       </div>
     </ng-template>
   </p-carousel>
