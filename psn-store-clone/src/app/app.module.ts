@@ -14,6 +14,8 @@ import { SearchBtnComponent } from './components/header/nav-bar/search-btn/searc
 import { ButtonHomeComponent } from './components/button-home/button-home.component';
 import { BannerComponent } from './components/banner/banner.component';
 import { CardGamesComponent } from './components/card-games/card-games.component';
+import { CarouselComponent } from './components/carousel/carousel.component';
+import { CarouselModule } from 'primeng/carousel';
 
 @NgModule({
   declarations: [
@@ -28,11 +30,13 @@ import { CardGamesComponent } from './components/card-games/card-games.component
     SearchBtnComponent,
     ButtonHomeComponent,
     BannerComponent,
-    CardGamesComponent
+    CardGamesComponent,
+    CarouselComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    CarouselModule
   ],
   providers: [],
   bootstrap: [AppComponent]

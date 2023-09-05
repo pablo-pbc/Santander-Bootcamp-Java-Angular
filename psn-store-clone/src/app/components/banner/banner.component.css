@@ -1,7 +1,7 @@
 .banner__container {
   display: flex;
   flex-direction: column;
-  padding: 0 0 50px 0;
+  padding: 25px 0;
 }
 
 .banner-img__container > img {
@@ -17,7 +17,7 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-start;
-  max-width: calc(100vw - 84px);
+  max-width: calc(100vw - 150px);
   margin: 25px auto;
 }
 
@@ -58,6 +58,10 @@
 
   .txt__container div:nth-child(1) {
     gap: 1rem;
+  }
+
+  .txt__container {
+    max-width: calc(100vw - 24px);
   }
 }
 
