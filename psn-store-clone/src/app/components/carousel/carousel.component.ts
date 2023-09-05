@@ -12,15 +12,34 @@ interface Card {
 })
 
 export class CarouselComponent implements OnInit{
-  @Input() carouselTitle: string;
+  @Input()
+  carouselTitle: string;
   prefix: string;
 
   games: Card[] = [];
   responsiveOptions: any[] | undefined;
 
+  navigators: boolean;
+  indicators: boolean;
+
+  windowWidth: number;
+
   constructor() {
     this.carouselTitle = '';
     this.prefix = 'assets/carousel-1/';
+
+    this.navigators = true;
+    this.indicators = false;
+
+    this.windowWidth = window.innerWidth;
+  }
+
+  navigatorsDisplay() {
+    return this.windowWidth < 600 ? !this.navigators : this.navigators;
+  }
+
+  indicatorsDisplay() {
+    return this.windowWidth < 600 ? !this.indicators : this.indicators;
   }
 
   ngOnInit(): void {
@@ -74,7 +93,7 @@ export class CarouselComponent implements OnInit{
         numScroll: 4,
       },
       {
-        breakpoint: '1030',
+        breakpoint: '1030px',
         numVisible: 3,
         numScroll: 3,
       },

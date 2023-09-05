@@ -59,5 +59,9 @@
   .txt__container div:nth-child(1) {
     gap: 1rem;
   }
+
+  .txt__container {
+    max-width: calc(100vw - 24px);
+  }
 }
 

@@ -7,7 +7,10 @@
     [numVisible]="6"
     [numScroll]="6"
     [circular]="false"
-    [showIndicators]="false"
+    [indicatorsContentStyle]="{'padding': '5px 0'}"
+    [indicatorStyle]="{'border-radius': '30px'}"
+    [showIndicators]="indicatorsDisplay()"
+    [showNavigators]="navigatorsDisplay()"
     [responsiveOptions]="responsiveOptions">
     <ng-template let-games pTemplate="item">
       <div class="product-item">
