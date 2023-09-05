@@ -13,7 +13,7 @@ import { DropdownComponent } from './components/header/nav-bar/dropdown/dropdown
 import { SearchBtnComponent } from './components/header/nav-bar/search-btn/search-btn.component';
 import { ButtonHomeComponent } from './components/button-home/button-home.component';
 import { BannerComponent } from './components/banner/banner.component';
-import { CardGamesComponent } from './components/card-games/card-games.component';
+import { CardGridComponent } from './components/card-grid/card-grid.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CarouselModule } from 'primeng/carousel';
 
@@ -30,7 +30,7 @@ import { CarouselModule } from 'primeng/carousel';
     SearchBtnComponent,
     ButtonHomeComponent,
     BannerComponent,
-    CardGamesComponent,
+    CardGridComponent,
     CarouselComponent
   ],
   imports: [

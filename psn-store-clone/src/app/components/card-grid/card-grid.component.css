@@ -1,4 +1,4 @@
-.card-games__container {
+.card-grid__container {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -6,16 +6,37 @@
   width: 100%;
 }
 
-.card-games__container ul {
+.card-grid__container ul {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 
-.card-games__container ul li {
+.card-grid__container ul li {
   list-style: none;
   margin: 10px;
+}
+
+.card-grid__container ul li:hover {
+  filter: brightness(90%);
+}
+
+h1 {
+  font-weight: 300;
+  font-size: 1.625rem;
+  line-height: 1.25;
+  letter-spacing: 0.1px;
+  margin: 40px 0;
+  color: #707070;
+}
+
+.none {
+  display: none;
+}
+
+.block {
+  display: block;
 }
 
 img {
@@ -42,7 +63,7 @@ img {
 }
 
 @media only screen and (max-width: 700px) {
-  .card-games__container ul {
+  .card-grid__container ul {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }

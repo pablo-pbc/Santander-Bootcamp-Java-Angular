@@ -1,0 +1,10 @@
+<section class="card-grid__container">
+  <h1 class="{{titleDisplay}}">Veja mais</h1>
+  <ul>
+    <li *ngFor="let item of typeValidation(); let i = index">
+      <a href="#">
+        <img src="{{typeValidation()[i]}}" alt="card number {{i}}">
+      </a>
+    </li>
+  </ul>
+</section>
