@@ -7,6 +7,7 @@ import { Component, Input } from '@angular/core';
 })
 export class BannerComponent {
   @Input() src: string;
+  @Input() srcMob: string;
   @Input() descrition: string;
   @Input() descritionDisplay: string;
   @Input() titleDisplay: string;
@@ -16,6 +17,7 @@ export class BannerComponent {
 
   constructor() {
     this.src = '';
+    this.srcMob = '';
     this.descrition = '';
     this.descritionDisplay = '';
     this.titleDisplay = '';
