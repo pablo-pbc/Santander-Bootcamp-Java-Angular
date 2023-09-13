@@ -1,6 +1,10 @@
 <section class="banner__container">
   <div class="banner-img__container">
-    <img src="{{src}}" alt="{{descrition}}">
+    <picture>
+      <source srcset="{{srcMob}}" media="(max-width: 600px)">
+
+      <img src="{{src}}" alt="{{descrition}}">
+    </picture>
   </div>
 
   <div class="banner-txt__container">
