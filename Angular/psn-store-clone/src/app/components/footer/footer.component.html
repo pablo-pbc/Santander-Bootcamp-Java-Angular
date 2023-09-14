@@ -1,1 +1,60 @@
-<p>footer works!</p>
+<section class="footer__container">
+  <div class="footer__region">
+    <img src="assets/svg/psn-white.svg" alt="playstation logo white">
+
+    <div>
+      <img src="assets/svg/globe.svg" alt="globe icon white">
+      <p>País/região: Brasil</p>
+    </div>
+  </div>
+
+  <div class="footer__links">
+    <div class="links__sac">
+      <ul>
+        <li *ngFor="let item of sac; let i = index">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer">
+            {{ sac[i] }}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="links__politics">
+      <ul>
+        <li *ngFor="let item of politics; let i = index">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer">
+            {{ politics[i] }}
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="links__social">
+      <ul>
+        <li *ngFor="let item of social; let i = index">
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer">
+            {{ social[i] }}
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="footer__copyright">
+    <a
+      href="https://www.playstation.com/ja-jp/legal/website-terms-of-use/#intellectual-property"
+      target="_blank"
+      rel="noopener noreferrer">
+      © 2023 Sony Interactive Entertainment Inc. Todos os direitos reservados.
+    </a>
+  </div>
+</section>
