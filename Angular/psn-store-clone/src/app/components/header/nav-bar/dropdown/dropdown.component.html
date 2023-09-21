@@ -1,6 +1,12 @@
 <ul class="dropdown__container">
-  <li *ngFor="let dropdownItens of items; let i = index">
+  <li *ngFor="let dropdownItens of items; let i = index" (click)="toggleDropdown(i)">
     {{items[i]}}
-    <img src="assets/svg/arrow-down.svg" alt="Arrow Down">
+    <span class="material-symbols-outlined" [ngClass]="{'transform': isRotated[i]}">
+      expand_more
+    </span>
   </li>
 </ul>
+
+<section class="dropdown-opened__container" [ngClass]="{'position': isOnTop}">
+  teste <br> teste
+</section>
