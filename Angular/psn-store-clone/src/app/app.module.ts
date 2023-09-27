@@ -16,6 +16,8 @@ import { BannerComponent } from './components/banner/banner.component';
 import { CardGridComponent } from './components/card-grid/card-grid.component';
 import { CarouselComponent } from './components/carousel/carousel.component';
 import { CarouselModule } from 'primeng/carousel';
+import { DropIconComponent } from './components/header/nav-bar/dropdown/drop-icon/drop-icon.component';
+import { DropListComponent } from './components/header/nav-bar/dropdown/drop-list/drop-list.component';
 
 @NgModule({
   declarations: [
@@ -31,7 +33,9 @@ import { CarouselModule } from 'primeng/carousel';
     ButtonHomeComponent,
     BannerComponent,
     CardGridComponent,
-    CarouselComponent
+    CarouselComponent,
+    DropIconComponent,
+    DropListComponent
   ],
   imports: [
     BrowserModule,

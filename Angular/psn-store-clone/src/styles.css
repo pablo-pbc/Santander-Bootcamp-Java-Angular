@@ -3,7 +3,18 @@
 
 @font-face {
   font-family: 'SST';
-  src: url('./assets/font-sst/SSTRg.TTF');
+  src: url('./assets/font/sst/SSTRg.TTF');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Shared-Nav-Icons';
+  src: url(assets/font/sharedNav/sharedNav.woff) format("woff");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
 }
 
 *{

@@ -1,0 +1,91 @@
+.dropIcon__container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropIcon__box {
+  display: flex;
+  flex-direction: column;
+  width: 156px;
+  height: 128px;
+  padding: 0 0.5rem;
+  margin: 10px 0;
+}
+
+.dropIcon__container a::before {
+  font-family: 'Shared-Nav-Icons', sans-serif;
+  font-size: 4.375rem;
+  color: #0070D1;
+}
+
+.dropIcon__container span {
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.0625rem;
+}
+
+a.sharedIconGames.ps5::before {
+  content: '\e947';
+}
+
+a.sharedIconGames.ps4::before {
+  content: '\e914';
+}
+
+a.sharedIconGames.ps-vr::before {
+  content: '\e911';
+}
+
+a.sharedIconGames.ps-plus::before {
+  content: '\e90c';
+}
+
+a.sharedIconGames.store::before {
+  content: '\e90e';
+}
+
+a.sharedIconHardware.ps5::before {
+  content: '\e947';
+}
+
+a.sharedIconHardware.ps4::before {
+  content: '\e914';
+}
+
+a.sharedIconHardware.ps4-pro::before {
+  content: '\e91b';
+}
+
+a.sharedIconHardware.ps-vr2::before {
+  content: '\e94a';
+}
+
+a.sharedIconServices.ps-plus::before {
+  content: '\e90d';
+}
+
+a.sharedIconServices.ps-stars::before {
+  content: '\e949';
+}
+
+a.sharedIconNews.ps-blog::before {
+  content: '\e906';
+}
+
+a.sharedIconNews.playstation::before {
+  content: '\e948';
+}
+
+a.sharedIconStore.ps-store::before {
+  content: '\e90e';
+}
+
+a.sharedIconSuport.suport::before {
+  content: '\e903';
+}
+
+a.sharedIconSuport.ps-status::before {
+  content: '\e91c';
+}

@@ -28,7 +28,7 @@ export class DropdownComponent {
   }
 
   toggleDropdown(index: number) {
-    this.isOnTop = !this.isOnTop;    
+    this.isOnTop = !this.isOnTop;
     this.isRotated[index] = !this.isRotated[index];
   }
 }
