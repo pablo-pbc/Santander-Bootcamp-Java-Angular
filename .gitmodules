@@ -1,0 +1,3 @@
+[submodule "Java/Java/junit5-exemplos"]
+	path = Java/Java/junit5-exemplos
+	url = https://github.com/willyancaetano/junit5-exemplos.git
