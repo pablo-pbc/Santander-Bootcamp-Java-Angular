@@ -1,3 +1,6 @@
 [submodule "Java/Java/junit5-exemplos"]
 	path = Java/Java/junit5-exemplos
 	url = https://github.com/willyancaetano/junit5-exemplos.git
+[submodule "Java/Java/dio-springboot"]
+	path = Java/Java/dio-springboot
+	url = https://github.com/digitalinnovationone/dio-springboot.git
